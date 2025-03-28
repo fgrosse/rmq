@@ -414,7 +414,7 @@ Currently, for each queue you are only supposed to call `StartConsuming()` and
 Also note that `StopAllConsuming()` will stop the heartbeat for this connection.
 It's also advised not to publish to any queue opened by this connection anymore.
 
-### Return Rejected Deliveries
+### Retry Rejected Deliveries
 
 Even if you don't have a push queue setup, there are cases where you need to
 consume previously failed deliveries again. For example, an external dependency
